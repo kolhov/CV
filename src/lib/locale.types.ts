@@ -30,3 +30,9 @@ export interface Project {
   features: string[];
   stack: string[];
 }
+
+export enum Language {
+  EN = 'en',
+  RU = 'ru',
+  CZ = 'cz'
+}

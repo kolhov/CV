@@ -48,7 +48,7 @@ export const strings: Profile = {
   ],
   "projects": [
     {
-      "name": "Cloud Storage",
+      "name": "Cloudové úložiště",
       "github": "https://github.com/kolhov/cloud-storage",
       "description": "Plně funkční fullstack monorepozitář. Supabase je použito pro autentizaci a databázi, soubory jsou ukládány na server s Express.js API, frontend je Vue 3 SPA.",
       "features": [
