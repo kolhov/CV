@@ -1,10 +1,10 @@
 import {defineStore} from "pinia";
 import {ref} from "vue";
-import {Language, type Profile} from "@/lib/locale.types.ts";
+import {Language, type Locale} from "@/lib/locale.types.ts";
 
 export const useLocaleStore = defineStore('locale-store', () => {
   const currLang = ref<Language>(Language.EN);
-  const locale = ref<Profile | null>(null);
+  const locale = ref<Locale | null>(null);
 
   function initStore(){
     const sysLang = navigator.language.split('-')[0];

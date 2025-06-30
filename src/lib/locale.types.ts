@@ -1,4 +1,4 @@
-export interface Profile {
+export interface Locale {
   name: string;
   email: string;
   github: string;
@@ -6,6 +6,13 @@ export interface Profile {
   courses: string[];
   jobs: Job[];
   projects: Project[];
+  page: Page;
+}
+
+export interface Page {
+  work: string;
+  education: string;
+  projects: string;
 }
 
 export interface University {
@@ -19,6 +26,7 @@ export interface Job {
   company: string;
   position: string;
   year: string;
+  months: string;
   achievements: string[];
   stack: string[];
 }

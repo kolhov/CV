@@ -1,6 +1,11 @@
-import type {Profile} from "@/lib/locale.types.ts";
+import type {Locale} from "@/lib/locale.types.ts";
 
-export const strings: Profile = {
+export const strings: Locale = {
+  "page": {
+    "work": "Work Experience",
+    "education": "Education",
+     "projects": "Projects"
+  },
   "name": "Oleg Ozherelev",
   "email": "kolhovv@gmail.com",
   "github": "https://github.com/kolhov",

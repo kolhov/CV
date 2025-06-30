@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import {onMounted} from "vue";
+import {storeToRefs} from "pinia";
+import {useLocaleStore} from "@/stores/locale-store.ts";
+
+const {locale} = storeToRefs(useLocaleStore());
 
 onMounted(() => {
   // Smooth navigation links
@@ -20,12 +24,14 @@ onMounted(() => {
 </script>
 
 <template>
-<a href="#intro">Intro</a>
-<a href="#intro">работа</a>
-<a href="#intro">образование</a>
-<a href="#intro">проекты</a>
-<a href="mailto:kolhovv@gmail.com">kolhovv@gmail.com</a>
-<a href="https://github.com/kolhov" target="_blank">github.com/kolhov</a>
+  <div class="flex flex-col" v-if="locale">
+    <a href="#intro">Intro</a>
+    <a href="#work">{{locale.page.work}}</a>
+    <a href="#education">{{locale.page.education}}</a>
+    <a href="#projects">{{locale.page.projects}}</a>
+    <a :href="`mailto:${locale.email}`" class="text-muted-foreground">{{locale.email}}</a>
+    <a href="https://github.com/kolhov" target="_blank" class="text-muted-foreground">github.com/kolhov</a>
+  </div>
 </template>
 
 <style scoped>

@@ -1,6 +1,11 @@
-import type {Profile} from "@/lib/locale.types.ts";
+import type {Locale} from "@/lib/locale.types.ts";
 
-export const strings: Profile = {
+export const strings: Locale = {
+  "page": {
+    work: "Опыт работы",
+    education: "Образование",
+    projects: "Проекты",
+  },
   "name": "Олег Ожерельев",
   "email": "kolhovv@ya.ru",
   "github": "https://github.com/kolhov",
@@ -21,9 +26,11 @@ export const strings: Profile = {
     {
       "company": "ECHOpix s.r.o.",
       "position": "Стажёр-разработчик",
-      "year": "Ноябрь 2023 – Апрель 2024 (6 месяцев)",
+      "year": "11 / 2023 – 4 / 2024",
+      "months": "(6 месяцев)",
       "achievements": [
-        "Спарсил все данные с WordPress сайта клиента с помощью Python для миграции в нашу базу данных."
+        "Спарсил все данные с WordPress сайта клиента с помощью Python для миграции в нашу базу данных.",
+        "Работа над MW городских киосков",
       ],
       "stack": [
         "Python", "TypeScript", "GraphQL"
@@ -31,8 +38,9 @@ export const strings: Profile = {
     },
     {
       "company": "ECHOpix s.r.o.",
-      "position": "Младший fullstack разработчик по контракту",
-      "year": "Апрель 2024 – 2025 (9 месяцев)",
+      "position": "Младший fullstack разработчик",
+      "year": "4 / 2024 – 1 / 2025",
+      "months": "(9 месяцев)",
       "achievements": [
         "Работа над API, SPA CMS и веб-сайтами. Добавление новых функций, отладка.",
         "Активное участие в разработке генератора сайтов с различными темами.",
