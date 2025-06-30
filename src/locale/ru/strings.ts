@@ -4,6 +4,7 @@ export const strings: Locale = {
   "page": {
     work: "Опыт работы",
     education: "Образование",
+    courses : "Дополнительное образование",
     projects: "Проекты",
   },
   "name": "Олег Ожерельев",

@@ -28,16 +28,23 @@ const {locale} = storeToRefs(useLocaleStore());
           </div>
         </div>
       </section>
-      <section id="education">
+      <section id="education" class="mt-10">
         <h2>{{locale.page.education}}</h2>
         <div class="flex p-2">
-          <div class="flex flex-col max-w-180">
+          <div class="flex flex-col max-w-148">
             <span>{{locale.uni.name}}</span>
             <span class="text-muted-foreground">{{locale.uni.year}}</span>
             <span class="text-muted-foreground">{{locale.uni.program}}</span>
             <span class="text-muted-foreground">{{locale.uni.specialization}}</span>
           </div>
         </div>
+        <div class="p-2">
+          <h3>{{locale.page.courses}}</h3>
+        </div>
+      </section>
+      <section id="projects" class="mt-10">
+        <h2>{{locale.page.projects}}</h2>
+
       </section>
     </div>
     <div v-else>

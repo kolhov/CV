@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -120,3 +119,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer component {
+  .link {
+    @apply p-2 hover:bg-muted rounded-md;
+  }
+  .contact {
+    @apply pl-2 text-muted-foreground hover:text-primary
+  }
+  .selected {
+    @apply bg-green-300 hover:bg-green-100
+  }
+}
+

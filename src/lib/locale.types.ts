@@ -13,6 +13,7 @@ export interface Page {
   work: string;
   education: string;
   projects: string;
+  courses: string;
 }
 
 export interface University {
