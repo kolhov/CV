@@ -3,6 +3,8 @@ import {Card} from "@/components/ui/card";
 import NavigationBar from "@/components/ui/NavigationBar/NavigationBar.vue";
 import {storeToRefs} from "pinia";
 import {useLocaleStore} from "@/stores/locale-store.ts";
+import {Accordion, AccordionTrigger, AccordionItem, AccordionContent} from "@/components/ui/accordion";
+import {Icon} from "@iconify/vue";
 
 const {locale} = storeToRefs(useLocaleStore());
 </script>
@@ -28,23 +30,33 @@ const {locale} = storeToRefs(useLocaleStore());
           </div>
         </div>
       </section>
-      <section id="education" class="mt-10">
+      <section id="education" class="mt-10 max-w-148">
         <h2>{{locale.page.education}}</h2>
         <div class="flex p-2">
-          <div class="flex flex-col max-w-148">
+          <div class="flex flex-col">
             <span>{{locale.uni.name}}</span>
-            <span class="text-muted-foreground">{{locale.uni.year}}</span>
-            <span class="text-muted-foreground">{{locale.uni.program}}</span>
-            <span class="text-muted-foreground">{{locale.uni.specialization}}</span>
+            <span class="text-xs text-muted-foreground">{{locale.uni.year}}</span>
+            <span class="text-sm text-muted-foreground">{{locale.uni.program}}</span>
+            <span class="text-sm text-muted-foreground">{{locale.uni.specialization}}</span>
           </div>
         </div>
-        <div class="p-2">
-          <h3>{{locale.page.courses}}</h3>
+        <div class="">
+          <Accordion type="single" class="w-full " collapsible>
+            <AccordionItem :value="locale.page.courses">
+              <AccordionTrigger><h3>{{locale.page.courses}}</h3></AccordionTrigger>
+              <AccordionContent class="pl-2">
+                <ul>
+                  <li class="flex flex-row text-sm text-muted-foreground" v-for="x in locale.courses">
+                    <Icon class="m-1" icon="lucide:check-check"/>{{x}}
+                  </li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
       <section id="projects" class="mt-10">
         <h2>{{locale.page.projects}}</h2>
-
       </section>
     </div>
     <div v-else>
