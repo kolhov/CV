@@ -7,6 +7,7 @@ import {Accordion, AccordionTrigger, AccordionItem, AccordionContent} from "@/co
 import {Icon} from "@iconify/vue";
 
 const {locale} = storeToRefs(useLocaleStore());
+
 </script>
 
 <template>
@@ -24,8 +25,10 @@ const {locale} = storeToRefs(useLocaleStore());
           <div class="flex flex-col max-w-120">
             <span>{{job.position}}</span>
             <span class="text-muted-foreground">{{job.company}}</span>
-            <ul class="pl-4 pt-2">
-              <li class="text-sm text-muted-foreground list-disc" v-for="x in job.achievements">{{x}}</li>
+            <ul>
+              <li class="flex flex-row text-sm text-muted-foreground " v-for="x in job.achievements">
+                <Icon class="mt-1 min-w-4 max-w-4" icon="lucide:chevron-right" /> {{x}}
+              </li>
             </ul>
           </div>
         </div>

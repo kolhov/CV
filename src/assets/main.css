@@ -206,7 +206,7 @@
 
 @layer component {
   .link {
-    @apply p-2 hover:bg-muted rounded-md;
+    @apply p-2 pl-4 hover:bg-muted rounded-md;
   }
   .contact {
     @apply pl-2 text-muted-foreground hover:text-primary

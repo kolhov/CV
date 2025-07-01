@@ -29,6 +29,7 @@ export const useLocaleStore = defineStore('locale-store', () => {
 
   return {
     locale,
+    currLang,
     initStore,
     changeLanguage,
   }
