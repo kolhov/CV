@@ -2,9 +2,11 @@ import type {Locale} from "@/lib/locale.types.ts";
 
 export const strings: Locale = {
   "page": {
-    "work": "Work Experience",
-    "education": "Education",
-     "projects": "Projects"
+    intro: "Intro",
+    work: "Pracovní zkušenosti",
+    education: "Vzdělání",
+    courses: "Dodatečné vzdělání",
+    projects: "Projekty",
   },
   "name": "Oleg Ozherelev",
   "email": "kolhovv@gmail.com",
@@ -27,23 +29,25 @@ export const strings: Locale = {
     {
       "company": "ECHOpix s.r.o.",
       "position": "Stáž jako vývojář",
-      "year": "Listopad 2023 – Duben 2024 (6 měsíců)",
+      "year": "11 / 2023 – 4 / 2024",
+      "months": "(6 měsíců)",
       "achievements": [
-        "Rozparsoval jsem všechna data z WordPress webu klienta pomocí Pythonu pro migraci do naší databáze."
+        "Rozparsoval jsem všechna data z WordPress webu klienta pro migraci do naší databáze (Python, GraphQL)",
+        "Naprogramoval jsem komunikační modul pro kiosky instalované ve více městech Česka (TypeScript, Node.js)"
       ],
       "stack": [
-        "Python", "TypeScript", "GraphQL"
+        "Python", "TypeScript", "GraphQL", "Node.js"
       ]
     },
     {
       "company": "ECHOpix s.r.o.",
-      "position": "Junior fullstack vývojář – DPČ",
-      "year": "Duben 2024 – 2025 (9 měsíců)",
+      "position": "Junior fullstack vývojář",
+      "year": "4 / 2024 – 1 / 2025",
+      "months": "(9 měsíců)",
       "achievements": [
-        "Práce na API, SPA CMS a webových stránkách. Přidávání nových funkcí, ladění.",
-        "Aktivní účast na vývoji generátoru webových stránek s různými šablonami.",
-        "Vývoj PWA aplikace pro více kiosků po celé České republice.",
-        "Pomoc s dockerizací projektů."
+        "Rozšiřování a ladění API, SPA CMS, firemních webů a kiosků",
+        "Aktivní účast na vývoji generátoru webových stránek s různými šablonami",
+        "Pomoc s dockerizací projektů"
       ],
       "stack": [
         "TypeScript", "Angular", "Tailwind", "Electron", "ExpressJs", "MongoDB", "GraphQL",

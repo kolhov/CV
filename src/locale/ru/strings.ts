@@ -2,12 +2,13 @@ import type {Locale} from "@/lib/locale.types.ts";
 
 export const strings: Locale = {
   "page": {
+    intro: "Интро",
     work: "Опыт работы",
     education: "Образование",
     courses : "Дополнительное образование",
     projects: "Проекты",
   },
-  "name": "Олег Ожерельев",
+  "name": "Ожерельев Олег",
   "email": "kolhovv@ya.ru",
   "github": "https://github.com/kolhov",
   "uni": {

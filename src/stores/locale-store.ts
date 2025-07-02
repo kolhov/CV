@@ -18,6 +18,7 @@ export const useLocaleStore = defineStore('locale-store', () => {
 
   function changeLanguage(value: Language){
     currLang.value = value;
+    //locale.value = null;
     getLocaleDict();
   }
 

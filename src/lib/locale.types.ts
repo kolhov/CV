@@ -10,6 +10,7 @@ export interface Locale {
 }
 
 export interface Page {
+  intro: string;
   work: string;
   education: string;
   projects: string;

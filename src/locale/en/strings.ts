@@ -1,44 +1,52 @@
 import type {Locale} from "@/lib/locale.types.ts";
 
 export const strings: Locale = {
+  "page": {
+    intro: "Intro",
+    work: "Work Experience",
+    education: "Education",
+    courses: "Additional Education",
+    projects: "Projects",
+  },
   "name": "Oleg Ozherelev",
   "email": "kolhovv@gmail.com",
   "github": "https://github.com/kolhov",
   "uni": {
     "name": "Silesian University in Opava",
     "year": "2022 – 2025",
-    "program": "Bachelor's degree program: Modern Informatics",
+    "program": "Bachelor’s Program: Modern Informatics",
     "specialization": "Specialization: Information and Communication Technologies"
   },
   "courses": [
-    "2022 Czech language course, GoStudy Brno",
-    "[Udemy] Complete C# Unity Game Developer 2D",
-    "[ITVDN] C# for professional",
+    "[Udemy] Complete C# Unity 2D Game Developer Course",
+    "[ITVDN] C# for Professionals",
     "[ITVDN] .NET Developer",
-    "Quinten Joran - Building Real-World Web Applications with Vue.js – 2023",
+    "Quinten Joran - Building Real Web Apps with Vue.js – 2023",
     "Vue.js Master Class 2024"
   ],
   "jobs": [
     {
       "company": "ECHOpix s.r.o.",
-      "position": "Developer internship",
-      "year": "November 2023 – April 2024 (6 month)",
+      "position": "Intern Developer",
+      "year": "11 / 2023 – 4 / 2024",
+      "months": "(6 months)",
       "achievements": [
-        "I parsed all the data from the client's WordPress site with python for migration to our database."
+        "Parsed all data from a client’s WordPress site for migration to our database (Python, GraphQL)",
+        "Developed a communication module for kiosks installed across multiple cities in the Czech Republic (TypeScript, Node.js)"
       ],
       "stack": [
-        "Python", "TypeScript", "GraphQL"
+        "Python", "TypeScript", "GraphQL", "Node.js"
       ]
     },
     {
       "company": "ECHOpix s.r.o.",
-      "position": "Junior fullstack developer contract",
-      "year": "April 2024 – 2025 (9 month)",
+      "position": "Junior Fullstack Developer",
+      "year": "4 / 2024 – 1 / 2025",
+      "months": "(9 months)",
       "achievements": [
-        "Working on APIs, SPA CMS, and websites. Adding new functionalities, debugging.",
-        "Actively participated in developing a website generator with various themes.",
-        "Working on PWA application for multiple kiosks across the Czech Republic.",
-        "Assistance with project dockerization."
+        "Extending and debugging the company's API, SPA CMS, websites, and kiosks",
+        "Actively participated in developing a site generator with multiple themes",
+        "Assisted with project dockerization"
       ],
       "stack": [
         "TypeScript", "Angular", "Tailwind", "Electron", "ExpressJs", "MongoDB", "GraphQL",
@@ -50,17 +58,17 @@ export const strings: Locale = {
     {
       "name": "Cloud Storage",
       "github": "https://github.com/kolhov/cloud-storage",
-      "description": "A fully functional fullstack monorepo. Supabase is used for authentication and the database, files are stored on an Express.js API server, and the frontend is a Vue 3 SPA.",
+      "description": "Fully functional fullstack monorepo. Supabase is used for authentication and database, files are stored on an Express.js API server, frontend is a Vue 3 SPA.",
       "features": [
         "Object storage",
-        "A folder tree generated using memoization with O(n) complexity",
-        "Direct file download using one-time download tokens",
-        "Ability to share files with access via link",
-        "Recursive folder upload with full preservation of file hierarchy",
+        "Folder tree built using memoization with O(n) time complexity",
+        "Direct file downloads using one-time tokens",
+        "Ability to share files via link",
+        "Recursive folder uploads with hierarchy preservation",
         "Reactive search through files and folders",
-        "Global file upload with a progress bar",
-        "Full file management functionality supported via a dropdown menu",
-        "Drag and drop upload"
+        "Global file uploads with progress indicator",
+        "Full file management via dropdown menu",
+        "Drag and drop uploads"
       ],
       "stack": [
         "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind", "Axios", "Node.js", "Express.js", "Supabase",
@@ -68,9 +76,9 @@ export const strings: Locale = {
       ]
     },
     {
-      "name": "Poe discord notify",
+      "name": "Poe Discord Notify",
       "github": "https://github.com/kolhov/poe-discord-notify",
-      "description": "This web-worker tracks positive economic changes in the Path of Exile (PoE) game using open APIs from poe.ninja. When a positive change is detected, the utility automatically posts updates in a specified Discord channel.",
+      "description": "A web worker monitors positive economic changes in the game Path of Exile (PoE) using public APIs from poe.ninja. Upon detecting favorable changes, it automatically posts updates to a designated Discord channel.",
       "features": [],
       "stack": [
         "TypeScript", "Node.js"
@@ -79,7 +87,7 @@ export const strings: Locale = {
     {
       "name": "Interpreter",
       "github": "https://github.com/kolhov/Interpreter",
-      "description": "School project. An interpreter written in TypeScript for translating Lua to JavaScript using finite-state machine",
+      "description": "University project. An interpreter written in TypeScript to translate Lua to JavaScript using a finite state machine.",
       "features": [],
       "stack": [
         "TypeScript", "Node.js"
