@@ -5,13 +5,14 @@ import {storeToRefs} from "pinia";
 import {useLocaleStore} from "@/stores/locale-store.ts";
 import {Accordion, AccordionTrigger, AccordionItem, AccordionContent} from "@/components/ui/accordion";
 import {Icon} from "@iconify/vue";
+import ProjectCard from "@/components/ui/ProjectCard/ProjectCard.vue";
 
 const {locale} = storeToRefs(useLocaleStore());
 
 </script>
 
 <template>
-  <main class="flex flex-row mt-8 m-x-5">
+  <main class="flex sm:flex-row flex-col mt-8 m-x-5">
     <NavigationBar class="m-2 p-2"/>
     <div class="flex flex-col m-2 p-2" v-if="locale">
       <section id="intro" class="mb-8 pt-8">
@@ -48,7 +49,7 @@ const {locale} = storeToRefs(useLocaleStore());
         <div>
           <Accordion type="single" class="w-full" collapsible>
             <AccordionItem :value="locale.page.courses">
-              <AccordionTrigger class="p-2 hover:bg-muted"><h3>{{locale.page.courses}}</h3></AccordionTrigger>
+              <AccordionTrigger class="p-2 hover:bg-muted hover:cursor-pointer"><h3>{{locale.page.courses}}</h3></AccordionTrigger>
               <AccordionContent class="pl-2">
                 <ul>
                   <li class="flex flex-row text-sm text-muted-foreground" v-for="x in locale.courses">
@@ -62,11 +63,14 @@ const {locale} = storeToRefs(useLocaleStore());
       </section>
       <section id="projects" class="mb-16 max-w-148">
         <h2 class="mb-4">{{locale.page.projects}}</h2>
-        <div class="grid grid-cols-5 grid-rows-3 rounded-md gap-4 h-80">
-          <div class="row-span-3 col-span-3 shadow-md rounded-md
-          border bg-green-800 block w-full h-full">
-            {{locale.projects[0].name}}
-          </div>
+        <div class="grid grid-cols-5 grid-rows-3 gap-4 h-80">
+          <ProjectCard class="row-span-3 col-span-3"
+                       :title="locale.projects[0].name"
+                       :stack="locale.projects[0].stack"
+                       img-placeholder="/cloud1.png"
+                       gif-on-hover="/cloud2.gif"
+          >
+          </ProjectCard>
           <div class="border rounded-md col-span-2">{{locale.projects[1].name}}</div>
           <div class="border rounded-md col-span-2">{{locale.projects[2].name}}</div>
         </div>

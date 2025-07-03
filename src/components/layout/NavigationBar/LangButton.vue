@@ -25,12 +25,12 @@ const lang = computed(() => {
 <template>
   <DropdownMenu :modal="false">
     <DropdownMenuTrigger as-child>
-      <Button class="justify-start w-30 mb-4" variant="outline">
+      <Button class="justify-center sm:justify-start w-30 mb-4 hover:cursor-pointer" variant="outline">
         <Icon :icon="`circle-flags:${currLang}`" /> {{lang}}
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent class="w-30">
-      <DropdownMenuLabel>Language</DropdownMenuLabel>
+      <DropdownMenuLabel class="text-center sm:text-start">Language</DropdownMenuLabel>
       <DropdownMenuSeparator />
       <DropdownMenuGroup>
         <DropdownMenuItem @click="localeStore.changeLanguage(Language.RU)">

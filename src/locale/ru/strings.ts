@@ -71,7 +71,7 @@ export const strings: Locale = {
         "Загрузка методом drag and drop"
       ],
       "stack": [
-        "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind", "Axios", "Node.js", "Express.js", "Supabase",
+        "TypeScript", "Vue", "Pinia", "ShadcnUI", "Tailwind", "Axios", "Node.js", "Express.js", "Supabase",
         "PostgreSQL"
       ]
     },
