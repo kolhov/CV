@@ -206,12 +206,12 @@
 
 @layer component {
   .link {
-    @apply p-2 px-4 hover:bg-muted rounded-md;
+    @apply p-2 px-4 hover:bg-muted rounded-md w-full;
   }
   .contact {
-    @apply pl-2 text-muted-foreground hover:text-primary
+    @apply pl-2 text-muted-foreground hover:text-primary;
   }
   .first {
-    @apply bg-green-300 hover:bg-green-100
+    @apply bg-green-300 hover:bg-green-100;
   }
 }

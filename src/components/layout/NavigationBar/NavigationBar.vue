@@ -56,8 +56,8 @@ window.addEventListener('load', () => {
 </script>
 
 <template>
-  <div class="min-w-44 lg:min-w-50 block" />
-  <div class="flex flex-col sm:fixed inset-x-0 sm:left-auto sm:right-auto sm:top-20 xx items-center sm:items-start" v-if="locale" role="navigation">
+  <div class="min-w-44 block" />
+  <div class="flex flex-col gap-1 sm:fixed inset-x-0 sm:left-auto sm:right-auto sm:top-20 xx items-center sm:items-start" v-if="locale" role="navigation">
     <LangButton />
     <a href="#intro" class="link">{{locale.page.intro}}</a>
     <a href="#work" class="link">{{locale.page.work}}</a>

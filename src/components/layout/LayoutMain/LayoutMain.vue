@@ -61,18 +61,22 @@ const {locale} = storeToRefs(useLocaleStore());
           </Accordion>
         </div>
       </section>
-      <section id="projects" class="mb-16 max-w-148">
+      <section id="projects" class="mb-54 max-w-148">
         <h2 class="mb-4">{{locale.page.projects}}</h2>
-        <div class="grid grid-cols-5 grid-rows-3 gap-4 h-80">
+        <div class="grid grid-cols-5 grid-rows-3 gap-4 h-90">
           <ProjectCard class="row-span-3 col-span-3"
-                       :title="locale.projects[0].name"
-                       :stack="locale.projects[0].stack"
+                       :project="locale.projects[0]"
                        img-placeholder="/cloud1.png"
                        gif-on-hover="/cloud2.gif"
-          >
-          </ProjectCard>
-          <div class="border rounded-md col-span-2">{{locale.projects[1].name}}</div>
-          <div class="border rounded-md col-span-2">{{locale.projects[2].name}}</div>
+          />
+          <ProjectCard class="border rounded-md col-span-2 row-span-2"
+                       :project="locale.projects[1]"
+                       img-placeholder="/poe1.png"
+                       gif-on-hover="/poe2.gif"
+          />
+          <ProjectCard class="border rounded-md col-span-2"
+                       :project="locale.projects[2]"
+          />
         </div>
       </section>
       <section id="end" class="m">
