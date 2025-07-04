@@ -91,8 +91,12 @@ const {locale, currLang} = storeToRefs(useLocaleStore());
           />
         </div>
       </section>
-      <section id="contacts" class="mb-54">
+      <section id="contacts" class="h-160">
         <SectionHead :title="locale.page.contacts" />
+        <span class="flex flex-row m-2">
+          <Icon icon="tdesign:location" class="place-self-center"/>
+          <span class="pl-2">{{locale.location}}</span>
+        </span>
         <a class="flex flex-row hover:underline m-2 w-1/3" :href="locale.github">
           <Icon icon="octicon:mark-github-16" class="place-self-center"/>
           <span class="pl-2">{{locale.github.split('://')[1]}}</span>

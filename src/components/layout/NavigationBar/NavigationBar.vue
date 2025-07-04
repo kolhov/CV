@@ -62,6 +62,7 @@ window.addEventListener('load', () => {
       <a href="#work" class="link">{{locale.page.work}}</a>
       <a href="#education" class="link">{{locale.page.education}}</a>
       <a href="#projects" class="link">{{locale.page.projects}}</a>
+      <a href="#contacts" class="link">{{locale.page.contacts}}</a>
       <br>
       <a :href="`mailto:${locale.email}`" class="contact">{{locale.email}}</a>
       <a :href="locale.github" target="_blank" class="contact">{{locale.github.split('://')[1]}}</a>

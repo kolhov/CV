@@ -2,6 +2,7 @@ export interface Locale {
   name: string;
   email: string;
   github: string;
+  location: string;
   uni: University;
   courses: string[];
   jobs: Job[];
