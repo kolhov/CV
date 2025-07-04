@@ -15,6 +15,7 @@ export interface Page {
   education: string;
   projects: string;
   courses: string;
+  contacts: string;
 }
 
 export interface University {

@@ -7,6 +7,7 @@ export const strings: Locale = {
     education: "Vzdělání",
     courses: "Dodatečné vzdělání",
     projects: "Projekty",
+    contacts: "Kontakty"
   },
   "name": "Oleg Ozherelev",
   "email": "kolhovv@gmail.com",
@@ -27,27 +28,25 @@ export const strings: Locale = {
   ],
   "jobs": [
     {
-      "company": "ECHOpix s.r.o.",
+      "company": "ECHOpix, Krnov",
       "position": "Stáž jako vývojář",
-      "year": "11 / 2023 – 4 / 2024",
+      "year": "11/2023 – 4/2024",
       "months": "(6 měsíců)",
       "achievements": [
-        "Rozparsoval jsem všechna data z WordPress webu klienta pro migraci do naší databáze (Python, GraphQL)",
-        "Naprogramoval jsem komunikační modul pro kiosky instalované ve více městech Česka (TypeScript, Node.js)"
+        "Rozparsoval jsem všechna data z WordPress webu klienta pro migraci do databáze (Python, GraphQL)",
+        "Podílel jsem se na vývoji komunikačního modulu pro kiosky instalované v různých městech České republiky (TypeScript, Node.js)"
       ],
       "stack": [
         "Python", "TypeScript", "GraphQL", "Node.js"
       ]
     },
     {
-      "company": "ECHOpix s.r.o.",
+      "company": "ECHOpix, Krnov",
       "position": "Junior fullstack vývojář",
-      "year": "4 / 2024 – 1 / 2025",
+      "year": "4/2024 – 1/2025",
       "months": "(9 měsíců)",
       "achievements": [
-        "Rozšiřování a ladění API, SPA CMS, firemních webů a kiosků",
-        "Aktivní účast na vývoji generátoru webových stránek s různými šablonami",
-        "Pomoc s dockerizací projektů"
+        "Cross-platformový webový vývoj"
       ],
       "stack": [
         "TypeScript", "Angular", "Tailwind", "Electron", "ExpressJs", "MongoDB", "GraphQL",

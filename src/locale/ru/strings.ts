@@ -7,8 +7,9 @@ export const strings: Locale = {
     education: "Образование",
     courses : "Дополнительное образование",
     projects: "Проекты",
+    contacts: "Контакты"
   },
-  "name": "Ожерельев Олег",
+  "name": "Ожерельев Олег Валерьевич",
   "email": "kolhovv@ya.ru",
   "github": "https://github.com/kolhov",
   "uni": {
@@ -26,27 +27,25 @@ export const strings: Locale = {
   ],
   "jobs": [
     {
-      "company": "ECHOpix s.r.o.",
+      "company": "ECHOpix, Krnov",
       "position": "Стажёр-разработчик",
-      "year": "11 / 2023 – 4 / 2024",
+      "year": "11/2023 – 4/2024",
       "months": "(6 месяцев)",
       "achievements": [
-        "Спарсил все данные с WordPress сайта клиента для миграции в нашу базу данных (Python, GraphQL)",
-        "Написал комуникационный модуль для киосков которые были установлены в множестве городов чехии (TypeScript, Node.js)",
+        "Спарсил все данные с WordPress сайта клиента для миграции в базу данных (Python, GraphQL)",
+        "Участвовал в разработке коммуникационного модуля для киосков, установленных в разных городах Чехии (TypeScript, Node.js)",
       ],
       "stack": [
         "Python", "TypeScript", "GraphQL", "Node.js"
       ]
     },
     {
-      "company": "ECHOpix s.r.o.",
-      "position": "Младший fullstack разработчик",
-      "year": "4 / 2024 – 1 / 2025",
+      "company": "ECHOpix, Krnov",
+      "position": "Junior fullstack разработчик",
+      "year": "4/2024 – 1/2025",
       "months": "(9 месяцев)",
       "achievements": [
-        "Расширение и Дебаг API, SPA CMS, веб-сайтов и киосков фирмы",
-        "Активное участие в разработке генератора сайтов с различными темами",
-        "Помощь с докеризацией проектов"
+        "Кроссплатформенная веб-разработка",
       ],
       "stack": [
         "TypeScript", "Angular", "Tailwind", "Electron", "ExpressJs", "MongoDB", "GraphQL",

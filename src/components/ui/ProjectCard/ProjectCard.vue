@@ -25,7 +25,7 @@ const picture = computed(() => {
     </div>
     <div class="absolute bottom-4 left-4 flex flex-col max-w-full gap-1">
       <span>{{project.name}}</span>
-      <div class="text-sm text-muted-foreground flex flex-wrap">
+      <div class="text-sm text-muted-foreground flex flex-wrap font-normal">
         <span v-for="x in project.stack">{{x}}&nbsp;&nbsp;</span>
       </div>
       <Badge class="mt-2"><a :href="project.github" target="_blank">Source</a></Badge>

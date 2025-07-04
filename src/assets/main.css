@@ -205,13 +205,19 @@
 }
 
 @layer component {
+  body {
+    @apply font-medium;
+  }
   .link {
-    @apply p-2 px-4 hover:bg-muted rounded-md w-full;
+    @apply p-2 px-4 hover:bg-muted rounded-md sm:w-full;
   }
   .contact {
     @apply pl-2 text-muted-foreground hover:text-primary;
   }
   .first {
     @apply bg-green-300 hover:bg-green-100;
+  }
+  .section-head {
+    @apply text-lg underline decoration-indigo-500 mx-4 font-semibold;
   }
 }

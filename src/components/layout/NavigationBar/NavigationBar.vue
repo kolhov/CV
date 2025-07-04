@@ -46,7 +46,6 @@ window.addEventListener('load', () => {
       let target = document.querySelector(hashVal!);
       if (target) target.scrollIntoView({
         behavior: 'smooth',
-        block: 'start',
       });
       history.pushState(null, '', hashVal);
       e.preventDefault();

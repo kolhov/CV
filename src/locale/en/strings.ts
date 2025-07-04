@@ -7,6 +7,7 @@ export const strings: Locale = {
     education: "Education",
     courses: "Additional Education",
     projects: "Projects",
+    contacts: "Contacts"
   },
   "name": "Oleg Ozherelev",
   "email": "kolhovv@gmail.com",
@@ -26,27 +27,25 @@ export const strings: Locale = {
   ],
   "jobs": [
     {
-      "company": "ECHOpix s.r.o.",
+      "company": "ECHOpix, Krnov",
       "position": "Intern Developer",
-      "year": "11 / 2023 – 4 / 2024",
+      "year": "11/2023 – 4/2024",
       "months": "(6 months)",
       "achievements": [
-        "Parsed all data from a client’s WordPress site for migration to our database (Python, GraphQL)",
-        "Developed a communication module for kiosks installed across multiple cities in the Czech Republic (TypeScript, Node.js)"
+        "Parsed all data from a client’s WordPress site for migration to database (Python, GraphQL)",
+        "Participated in the development of a communication module for kiosks installed in various cities across the Czech Republic (TypeScript, Node.js)"
       ],
       "stack": [
         "Python", "TypeScript", "GraphQL", "Node.js"
       ]
     },
     {
-      "company": "ECHOpix s.r.o.",
+      "company": "ECHOpix, Krnov",
       "position": "Junior Fullstack Developer",
-      "year": "4 / 2024 – 1 / 2025",
+      "year": "4/2024 – 1/2025",
       "months": "(9 months)",
       "achievements": [
-        "Extending and debugging the company's API, SPA CMS, websites, and kiosks",
-        "Actively participated in developing a site generator with multiple themes",
-        "Assisted with project dockerization"
+        "Cross-platform web development"
       ],
       "stack": [
         "TypeScript", "Angular", "Tailwind", "Electron", "ExpressJs", "MongoDB", "GraphQL",
