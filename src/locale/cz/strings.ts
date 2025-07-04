@@ -7,7 +7,8 @@ export const strings: Locale = {
     education: "Vzdělání",
     courses: "Dodatečné vzdělání",
     projects: "Projekty",
-    contacts: "Kontakty"
+    contacts: "Kontakty",
+    pdf: "Stáhnout PDF"
   },
   "name": "Oleg Ozherelev",
   "email": "kolhovv@gmail.com",
@@ -46,7 +47,7 @@ export const strings: Locale = {
       "year": "4/2024 – 1/2025",
       "months": "(9 měsíců)",
       "achievements": [
-        "Cross-platformový webový vývoj"
+        "Cross-platformový webový vývoj (MEAN)"
       ],
       "stack": [
         "TypeScript", "Angular", "Tailwind", "Electron", "ExpressJs", "MongoDB", "GraphQL",

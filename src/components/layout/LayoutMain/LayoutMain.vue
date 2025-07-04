@@ -7,8 +7,9 @@ import {Accordion, AccordionTrigger, AccordionItem, AccordionContent} from "@/co
 import {Icon} from "@iconify/vue";
 import ProjectCard from "@/components/ui/ProjectCard/ProjectCard.vue";
 import SectionHead from "@/components/ui/SectionHead/SectionHead.vue";
+import {Button} from "@/components/ui/button";
 
-const {locale} = storeToRefs(useLocaleStore());
+const {locale, currLang} = storeToRefs(useLocaleStore());
 
 </script>
 
@@ -16,8 +17,13 @@ const {locale} = storeToRefs(useLocaleStore());
   <main class="flex sm:flex-row flex-col mt-8 m-x-5 w-full justify-center">
     <NavigationBar class="m-2 p-2"/>
     <div class="flex flex-col m-2 p-2" v-if="locale">
-      <section id="intro" class="mb-8 pt-8">
-        <h1 class="justify-self-center text-xl">{{locale.name}}</h1>
+      <section id="intro" class="mb-8 pt-8 justify-items-center">
+        <h1 class="text-xl">{{locale.name}}</h1>
+        <a :href="`/files/CV_${currLang.toUpperCase()}.pdf`" download>
+        <Button class="mt-6 cursor-pointer font-semibold bg-green-400 hover:bg-green-300 shadow-md shadow-green-400/50 hover:shadow-green-300/50">
+          <Icon icon="carbon:generate-pdf" class="w-full h-full"/>{{locale.page.pdf}}
+        </Button>
+        </a>
       </section>
       <section id="work" class="mb-12 max-w-148">
         <SectionHead :title="locale.page.work" />
@@ -45,8 +51,8 @@ const {locale} = storeToRefs(useLocaleStore());
         <SectionHead :title="locale.page.education" />
         <div class="flex">
           <div class="flex flex-col relative w-full gap-1">
-            <img src="/logo_web_fpf.png" alt="Logo FPF SLU" class="w-[25%] absolute top-0 right-0">
-            <span>{{locale.uni.name}}</span>
+            <img src="/img/logo_web_fpf.png" alt="Logo FPF SLU" class="w-[25%] absolute top-0 right-0">
+            <span class="text-lg">{{locale.uni.name}}</span>
             <span class="text-sm text-muted-foreground mt-2">{{locale.uni.year}}</span>
             <span class="text-md text-muted-foreground">{{locale.uni.program}}</span>
             <span class="text-md text-muted-foreground">{{locale.uni.specialization}}</span>
@@ -72,13 +78,13 @@ const {locale} = storeToRefs(useLocaleStore());
         <div class="grid grid-cols-5 grid-rows-3 gap-4 h-90">
           <ProjectCard class="row-span-3 col-span-3"
                        :project="locale.projects[0]"
-                       img-placeholder="/cloud1.png"
-                       gif-on-hover="/cloud2.gif"
+                       img-placeholder="/img/cloud1.png"
+                       gif-on-hover="/img/cloud2.gif"
           />
           <ProjectCard class="border rounded-md col-span-2 row-span-2"
                        :project="locale.projects[1]"
-                       img-placeholder="/poe1.png"
-                       gif-on-hover="/poe2.gif"
+                       img-placeholder="/img/poe1.png"
+                       gif-on-hover="/img/poe2.gif"
           />
           <ProjectCard class="border rounded-md col-span-2"
                        :project="locale.projects[2]"
@@ -87,6 +93,14 @@ const {locale} = storeToRefs(useLocaleStore());
       </section>
       <section id="contacts" class="mb-54">
         <SectionHead :title="locale.page.contacts" />
+        <a class="flex flex-row hover:underline m-2 w-1/3" :href="locale.github">
+          <Icon icon="octicon:mark-github-16" class="place-self-center"/>
+          <span class="pl-2">{{locale.github.split('://')[1]}}</span>
+        </a>
+        <a class="flex flex-row hover:underline m-2 w-1/3" :href="`mailto:${locale.email}`">
+          <Icon icon="lucide:mail" class="place-self-center"/>
+          <span class="pl-2">{{locale.email}}</span>
+        </a>
       </section>
     </div>
     <div v-else>

@@ -7,7 +7,8 @@ export const strings: Locale = {
     education: "Образование",
     courses : "Дополнительное образование",
     projects: "Проекты",
-    contacts: "Контакты"
+    contacts: "Контакты",
+    pdf: "Скачать PDF"
   },
   "name": "Ожерельев Олег Валерьевич",
   "email": "kolhovv@ya.ru",
@@ -45,7 +46,7 @@ export const strings: Locale = {
       "year": "4/2024 – 1/2025",
       "months": "(9 месяцев)",
       "achievements": [
-        "Кроссплатформенная веб-разработка",
+        "Кроссплатформенная веб-разработка (MEAN)",
       ],
       "stack": [
         "TypeScript", "Angular", "Tailwind", "Electron", "ExpressJs", "MongoDB", "GraphQL",

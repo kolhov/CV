@@ -216,6 +216,6 @@
     @apply bg-green-300 hover:bg-green-100;
   }
   .section-head {
-    @apply text-lg underline decoration-indigo-500 mx-4 font-semibold;
+    @apply text-lg underline decoration-green-500 mx-4 font-semibold;
   }
 }

@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
       <a href="#projects" class="link">{{locale.page.projects}}</a>
       <br>
       <a :href="`mailto:${locale.email}`" class="contact">{{locale.email}}</a>
-      <a href="https://github.com/kolhov" target="_blank" class="contact">github.com/kolhov</a>
+      <a :href="locale.github" target="_blank" class="contact">{{locale.github.split('://')[1]}}</a>
     </div>
   </div>
 </template>
