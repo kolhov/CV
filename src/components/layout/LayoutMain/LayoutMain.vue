@@ -13,7 +13,7 @@ const {locale} = storeToRefs(useLocaleStore());
 </script>
 
 <template>
-  <main class="flex sm:flex-row flex-col mt-8 m-x-5">
+  <main class="flex sm:flex-row flex-col mt-8 m-x-5 w-full justify-center">
     <NavigationBar class="m-2 p-2"/>
     <div class="flex flex-col m-2 p-2" v-if="locale">
       <section id="intro" class="mb-8 pt-8">
@@ -92,6 +92,7 @@ const {locale} = storeToRefs(useLocaleStore());
     <div v-else>
       Loading...
     </div>
+    <div class="xl:min-w-48" />
   </main>
 </template>
 
