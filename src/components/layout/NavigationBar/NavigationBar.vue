@@ -39,7 +39,7 @@ window.addEventListener('load', () => {
   window.onscroll = debounce(scrollCalc, 5);
   setTimeout(() => {
     scrollCalc();
-  }, 20);
+  }, 100);
 
   // Smooth navigation links
   let anchorLinks = document.querySelectorAll('a[href^="#"]');
