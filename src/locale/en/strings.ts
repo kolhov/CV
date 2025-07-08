@@ -11,11 +11,11 @@ export const strings: Locale = {
     pdf: "Download PDF"
   },
   "name": "Oleg Ozherelev",
-  "email": "kolhovv@gmail.com",
+  "email": "o.ozherelev.ict@gmail.com",
   "github": "https://github.com/kolhov",
   "location": "Czech Republic. Open to relocation.",
   "uni": {
-    "name": "Silesian University in Opava",
+    "name": "Silesian University, Czech",
     "year": "2022 – 2025",
     "program": "Bachelor’s Program: Modern Informatics",
     "specialization": "Specialization: Information and Communication Technologies"
@@ -67,9 +67,6 @@ export const strings: Locale = {
         "Ability to share files via link",
         "Recursive folder uploads with hierarchy preservation",
         "Reactive search through files and folders",
-        "Global file uploads with progress indicator",
-        "Full file management via dropdown menu",
-        "Drag and drop uploads"
       ],
       "stack": [
         "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind", "Axios", "Node.js", "Express.js", "Supabase",
@@ -86,12 +83,12 @@ export const strings: Locale = {
       ]
     },
     {
-      "name": "Interpreter",
-      "github": "https://github.com/kolhov/Interpreter",
-      "description": "University project. An interpreter written in TypeScript to translate Lua to JavaScript using a finite state machine.",
+      "name": "Portfolio",
+      "github": "https://github.com/kolhov/CV",
+      "description": "",
       "features": [],
       "stack": [
-        "TypeScript", "Node.js"
+        "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind"
       ]
     }
   ]

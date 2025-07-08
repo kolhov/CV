@@ -37,7 +37,10 @@ function scrollCalc() {
 
 window.addEventListener('load', () => {
   window.onscroll = debounce(scrollCalc, 5);
-  scrollCalc();
+  setTimeout(() => {
+    scrollCalc();
+  }, 20);
+
   // Smooth navigation links
   let anchorLinks = document.querySelectorAll('a[href^="#"]');
   for (let item of anchorLinks) {

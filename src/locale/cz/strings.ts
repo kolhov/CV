@@ -11,7 +11,7 @@ export const strings: Locale = {
     pdf: "Stáhnout PDF"
   },
   "name": "Oleg Ozherelev",
-  "email": "kolhovv@gmail.com",
+  "email": "o.ozherelev.ict@gmail.com",
   "github": "https://github.com/kolhov",
   "location": "Moravskoslezský kraj, jsem připraven se přestěhovat do vašeho města.",
   "uni": {
@@ -68,9 +68,6 @@ export const strings: Locale = {
         "Možnost sdílet soubory prostřednictvím odkazu",
         "Rekurzivní nahrávání složek se zachováním hierarchie",
         "Reaktivní vyhledávání mezi soubory a složkami",
-        "Globální nahrávání souborů s ukazatelem průběhu",
-        "Kompletní správa souborů přes dropdown menu",
-        "Nahrávání pomocí přetažení (drag and drop)"
       ],
       "stack": [
         "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind", "Axios", "Node.js", "Express.js", "Supabase",
@@ -87,12 +84,12 @@ export const strings: Locale = {
       ]
     },
     {
-      "name": "Interpreter",
-      "github": "https://github.com/kolhov/Interpreter",
-      "description": "Školní projekt. Interpret napsaný v TypeScriptu pro překlad Lua do JavaScriptu pomocí konečného stavového automatu",
+      "name": "Portfolio",
+      "github": "https://github.com/kolhov/CV",
+      "description": "",
       "features": [],
       "stack": [
-        "TypeScript", "Node.js"
+        "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind"
       ]
     }
   ]

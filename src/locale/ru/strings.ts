@@ -11,11 +11,11 @@ export const strings: Locale = {
     pdf: "Скачать PDF"
   },
   "name": "Ожерельев Олег Валерьевич",
-  "email": "kolhovv@ya.ru",
+  "email": "o.ozherelev.ict@gmail.com",
   "github": "https://github.com/kolhov",
   "location": "Чехия. Готов к релокации.",
   "uni": {
-    "name": "Силезский университет в Опаве",
+    "name": "Силезский университет, Чехия",
     "year": "2022 – 2025",
     "program": "Бакалаврская программа: Современная информатика",
     "specialization": "Специализация: Информационные и коммуникационные технологии"
@@ -67,9 +67,6 @@ export const strings: Locale = {
         "Возможность делиться файлами по ссылке",
         "Рекурсивная загрузка папок с сохранением иерархии",
         "Реактивный поиск по файлам и папкам",
-        "Глобальная загрузка файлов с индикатором прогресса",
-        "Полное управление файлами через dropdown меню",
-        "Загрузка методом drag and drop"
       ],
       "stack": [
         "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind", "Axios", "Node.js", "Express.js", "Supabase",
@@ -86,12 +83,12 @@ export const strings: Locale = {
       ]
     },
     {
-      "name": "Interpreter",
-      "github": "https://github.com/kolhov/Interpreter",
-      "description": "Проект от вуза. Интерпретатор, написанный на TypeScript для трансляции Lua в JavaScript с использованием конечного автомата",
+      "name": "Портфолио",
+      "github": "https://github.com/kolhov/CV",
+      "description": "",
       "features": [],
       "stack": [
-        "TypeScript", "Node.js"
+        "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind"
       ]
     }
   ]

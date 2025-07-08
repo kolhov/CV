@@ -15,7 +15,7 @@ const {locale, currLang} = storeToRefs(useLocaleStore());
 
 <template>
   <main class="flex sm:flex-row flex-col mt-8 m-x-5 w-full justify-center">
-    <NavigationBar class="m-2 p-2"/>
+    <NavigationBar class="mr-8 p-2"/>
     <div class="flex flex-col m-2 p-2" v-if="locale">
       <section id="intro" class="mb-8 pt-8 justify-items-center">
         <h1 class="text-xl">{{locale.name}}</h1>
@@ -51,7 +51,7 @@ const {locale, currLang} = storeToRefs(useLocaleStore());
         <SectionHead :title="locale.page.education" />
         <div class="flex">
           <div class="flex flex-col relative w-full gap-1">
-            <img src="/img/logo_web_fpf.png" alt="Logo FPF SLU" class="w-[25%] absolute top-0 right-0">
+            <img src="/img/logo_web_fpf.png" alt="Logo FPF SLU" class="w-[55%] place-self-center mb-6 sm:w-[25%] sm:absolute sm:top-0 sm:right-0">
             <span class="text-lg">{{locale.uni.name}}</span>
             <span class="text-sm text-muted-foreground mt-2">{{locale.uni.year}}</span>
             <span class="text-md text-muted-foreground">{{locale.uni.program}}</span>
@@ -75,18 +75,18 @@ const {locale, currLang} = storeToRefs(useLocaleStore());
       </section>
       <section id="projects" class="mb-18 max-w-148">
         <SectionHead :title="locale.page.projects" />
-        <div class="grid grid-cols-5 grid-rows-3 gap-4 h-90">
-          <ProjectCard class="row-span-3 col-span-3"
+        <div class="grid grid-cols-5 grid-rows-5 md:grid-rows-3 gap-4 h-100">
+          <ProjectCard class="row-span-4 md:row-span-3 col-span-3"
                        :project="locale.projects[0]"
                        img-placeholder="/img/cloud1.png"
                        gif-on-hover="/img/cloud2.gif"
           />
-          <ProjectCard class="border rounded-md col-span-2 row-span-2"
+          <ProjectCard class="border rounded-md col-span-2 row-span-3 md:row-span-2"
                        :project="locale.projects[1]"
                        img-placeholder="/img/poe1.png"
                        gif-on-hover="/img/poe2.gif"
           />
-          <ProjectCard class="border rounded-md col-span-2"
+          <ProjectCard class="border rounded-md col-span-2 row-span-2 md:row-span-1"
                        :project="locale.projects[2]"
           />
         </div>
@@ -94,15 +94,15 @@ const {locale, currLang} = storeToRefs(useLocaleStore());
       <section id="contacts" class="h-160">
         <SectionHead :title="locale.page.contacts" />
         <span class="flex flex-row m-2">
-          <Icon icon="tdesign:location" class="place-self-center"/>
+          <Icon icon="tdesign:location" class="place-self-center min-w-4"/>
           <span class="pl-2">{{locale.location}}</span>
         </span>
         <a class="flex flex-row hover:underline m-2 w-1/3" :href="locale.github">
-          <Icon icon="octicon:mark-github-16" class="place-self-center"/>
+          <Icon icon="octicon:mark-github-16" class="place-self-center min-w-4"/>
           <span class="pl-2">{{locale.github.split('://')[1]}}</span>
         </a>
         <a class="flex flex-row hover:underline m-2 w-1/3" :href="`mailto:${locale.email}`">
-          <Icon icon="lucide:mail" class="place-self-center"/>
+          <Icon icon="lucide:mail" class="place-self-center min-w-4"/>
           <span class="pl-2">{{locale.email}}</span>
         </a>
       </section>
