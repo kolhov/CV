@@ -13,7 +13,7 @@ export const strings: Locale = {
   "name": "Oleg Ozherelev",
   "email": "o.ozherelev.ict@gmail.com",
   "github": "https://github.com/kolhov",
-  "location": "Czech Republic. Open to relocation.",
+  "location": "Tolyatti, Russia. Open to relocation.",
   "uni": {
     "name": "Silesian University, Czech",
     "year": "2022 – 2025",
