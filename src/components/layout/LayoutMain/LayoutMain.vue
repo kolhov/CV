@@ -101,6 +101,10 @@ const {locale, currLang} = storeToRefs(useLocaleStore());
           <Icon icon="octicon:mark-github-16" class="place-self-center min-w-4"/>
           <span class="pl-2">{{locale.github.split('://')[1]}}</span>
         </a>
+        <a class="flex flex-row hover:underline m-2 w-1/3 pt-4" href="https://t.me/faantanka">
+          <Icon icon="ph:telegram-logo" class="place-self-center min-w-4"/>
+          <span class="pl-2">{{locale.page.telegram}}</span>
+        </a>
         <a class="flex flex-row hover:underline m-2 w-1/3" :href="`mailto:${locale.email}`">
           <Icon icon="lucide:mail" class="place-self-center min-w-4"/>
           <span class="pl-2">{{locale.email}}</span>

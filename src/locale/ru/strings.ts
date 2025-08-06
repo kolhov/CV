@@ -8,7 +8,8 @@ export const strings: Locale = {
     courses : "Дополнительное образование",
     projects: "Проекты",
     contacts: "Контакты",
-    pdf: "Скачать PDF"
+    pdf: "Скачать PDF",
+    telegram: "Telegram: @faantanka"
   },
   "name": "Ожерельев Олег Валерьевич",
   "email": "o.ozherelev.ict@gmail.com",

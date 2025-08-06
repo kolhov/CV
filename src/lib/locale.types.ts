@@ -18,6 +18,7 @@ export interface Page {
   courses: string;
   contacts: string;
   pdf: string;
+  telegram: string;
 }
 
 export interface University {
