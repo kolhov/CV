@@ -28,7 +28,14 @@ const picture = computed(() => {
       <div class="text-sm text-muted-foreground flex flex-wrap font-normal">
         <span v-for="x in project.stack">{{x}}&nbsp;&nbsp;</span>
       </div>
-      <Badge class="mt-2"><a :href="project.github" target="_blank">Source</a></Badge>
+      <div class="flex gap-x-2 mt-1.5">
+        <a :href="project.github" target="_blank">
+          <Badge class="hover:bg-gray-400">Source</Badge>
+        </a>
+        <a v-if="project.demo" :href="project.demo" target="_blank">
+          <Badge class="hover:bg-gray-400">Demo</Badge>
+        </a>
+      </div>
     </div>
   </div>
 </template>

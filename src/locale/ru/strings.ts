@@ -9,12 +9,13 @@ export const strings: Locale = {
     projects: "Проекты",
     contacts: "Контакты",
     pdf: "Скачать PDF",
+    gitAd: "Больше на моём GitHub",
     telegram: "Telegram: @faantanka"
   },
   "name": "Ожерельев Олег Валерьевич",
   "email": "o.ozherelev.ict@gmail.com",
   "github": "https://github.com/kolhov",
-  "location": "Тольятти. Готов к релокации.",
+  "location": "Тольятти (+1 МСК). Готов к релокации или удалённой работе.",
   "uni": {
     "name": "Силезский университет, Чехия",
     "year": "2022 – 2025",
@@ -58,7 +59,7 @@ export const strings: Locale = {
   ],
   "projects": [
     {
-      "name": "Облачное хранилище",
+      "name": "Облачное объектное хранилище",
       "github": "https://github.com/kolhov/cloud-storage",
       "description": "Полностью функциональный fullstack монорепозиторий. Supabase используется для аутентификации и базы данных, файлы хранятся на сервере Express.js API, фронтенд — Vue 3 SPA.",
       "features": [
@@ -90,6 +91,16 @@ export const strings: Locale = {
       "features": [],
       "stack": [
         "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind"
+      ]
+    },
+    {
+      "name": "Dashboard progress bar",
+      "github": "https://github.com/kolhov/round-progress-bar",
+      "demo": "https://progress-dashboard-demo.staticrun.app",
+      "description": "",
+      "features": [],
+      "stack": [
+        "TypeScript", "Vue", "SVG"
       ]
     }
   ]

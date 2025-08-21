@@ -19,6 +19,7 @@ export interface Page {
   contacts: string;
   pdf: string;
   telegram: string;
+  gitAd: string;
 }
 
 export interface University {
@@ -43,6 +44,7 @@ export interface Project {
   description: string;
   features: string[];
   stack: string[];
+  demo?: string;
 }
 
 export enum Language {

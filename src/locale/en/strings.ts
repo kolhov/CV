@@ -9,6 +9,7 @@ export const strings: Locale = {
     projects: "Projects",
     contacts: "Contacts",
     pdf: "Download PDF",
+    gitAd: "More on my GitHub",
     telegram: "Telegram: @faantanka"
   },
   "name": "Oleg Ozherelev",
@@ -90,6 +91,16 @@ export const strings: Locale = {
       "features": [],
       "stack": [
         "TypeScript", "Vue", "Pinia", "Shadcn UI", "Tailwind"
+      ]
+    },
+    {
+      "name": "Dashboard progress bar",
+      "github": "https://github.com/kolhov/round-progress-bar",
+      "demo": "https://progress-dashboard-demo.staticrun.app",
+      "description": "",
+      "features": [],
+      "stack": [
+        "TypeScript", "Vue", "SVG"
       ]
     }
   ]
