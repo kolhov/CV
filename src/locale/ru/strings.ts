@@ -125,7 +125,7 @@ export const strings: Locale = {
     {
       name: 'Dashboard progress bar',
       github: 'https://github.com/kolhov/round-progress-bar',
-      demo: 'https://progress-dashboard-demo.staticrun.app',
+      demo: 'https://kolhov.github.io/round-progress-bar/',
       description: '',
       features: [],
       stack: ['TypeScript', 'Vue', 'SVG'],
